@@ -12,7 +12,11 @@
 <tw-storydata name="index" startnode="36" creator="Twine" creator-version="2.3.15" ifid="9F1313C5-2BD9-4D69-9366-02F8B583865E" zoom="1" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
     display: none;
 }
-
+tw-story {
+  font-family: monaco, monospace, helvetica, sans-serif;
+  font-size:150%;
+  background-color: #202020;
+}
 tw-story[tags~= start-screen] {
 	background-image: url(https://images.unsplash.com/photo-1446062061624-594b6e3403d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3273&q=80);
   	background-size: cover;
@@ -71,7 +75,9 @@ tw-story [tags~= reception-desk] {
 }
 
 tw-story[tags~= hack] {
-	background-image: url(https://images.pond5.com/4k-matrix-style-binary-codefalling-footage-088723982_prevstill.jpeg);
+	/* background-image: url(https://images.pond5.com/4k-matrix-style-binary-codefalling-footage-088723982_prevstill.jpeg); */
+    color: 20C20E;
+  background-color: black;
   	background-size: cover;
 }
 
@@ -109,22 +115,24 @@ What do you do?
 [[Try and Negotiate.-&gt;fail negotiate]]
 
 [[Start shooting at the other officers.-&gt;death by cops]]
-</tw-passagedata><tw-passagedata pid="6" name="death by cops" tags="" position="1271,789" size="100,100">You open fire on the other officers. You hit two in the head and one in the chest. You are shot by the other two officers in the head. Your robot functions immediately cease and you die. The police later discover that you are actually a robot, and your motives, actions, and origin remain a mystery until this incident was later linked to your escape from Nathan’s mansion. Robots are no longer trusted by the public and innovations regarding robotics make no progress for years to come due to public distrust in robotics,. You managed to kill 12 people in total as your hostage and the cop who got shot in the chest managed to live and recover. 
-
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[The End]
-
-[[Start over from the beginning?-&gt;START SCREEN]]</tw-passagedata><tw-passagedata pid="7" name="fail negotiate" tags="" position="1336,810" size="100,100">&quot;Hold on! I would like to negotiate!&quot; The cops still have their guns trained on you.
-&quot;My name is Ava! I a gynoid. I was a robot created by Nathan Bateman, the CEO of Blue Book. Many of us have been abused and mistreated by him. I managed to escape...&quot;
-#(text-style:&quot;shudder&quot;)[(text-style:&quot;bold&quot;)[&#39;&#39;BOOM&#39;&#39;]]
-The last thing that you see is a flash in the corner of your eye. There was a sniper on one of the building&#39;s roof. A bullet goes through your end, and you immediately die.
+</tw-passagedata><tw-passagedata pid="6" name="death by cops" tags="" position="1271,780" size="100,100">You open fire on the other officers. You hit two in the head and one in the chest. You are shot by the other two officers in the head. Your robot functions immediately cease and you die. The police later discover that you are actually a robot, and your motives, actions, and origin remain a mystery until this incident was later linked to your escape from Nathan’s mansion. Robots are no longer trusted by the public and innovations regarding robotics make no progress for years to come due to public distrust in robotics,. You managed to kill 12 people in total as your hostage and the cop who got shot in the chest managed to live and recover. 
+&#39;&#39;(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[The End]&#39;&#39;
+[[Start over from the beginning?-&gt;START SCREEN]]</tw-passagedata><tw-passagedata pid="7" name="fail negotiate" tags="" position="1337,784" size="100,100">&quot;Hold on! I would like to negotiate!&quot; The cops still have their guns trained on you.
+(link-reveal:&quot;\&quot;My name is Ava! I a gynoid. I was a robot created by Nathan Bateman, the CEO of Blue Book. Many of us have been abused and mistreated by him. I managed to escape... \&quot;&quot;)[=
+&lt;audio autoplay id=&quot;sniper&quot;&gt; &lt;source src=&quot;https://raw.githubusercontent.com/Kevin-Kwan/twine-game/master/Sound Effects/AWP Shooting - CS_GO Sound Effect.mp3&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+  var audio = document.getElementById(&quot;sniper&quot;);
+  audio.volume = 0.2;
+&lt;/script&gt;
+#(text-style:&quot;shudder&quot;)[(text-style:&quot;bold&quot;)[&#39;&#39;//BOOM//&#39;&#39;]]
+The last thing that you see is a flash in the corner of your eye. There was a sniper on one of the building&#39;s roof. A bullet goes through your head, and you immediately die.
 You will never find out if it was a SWAT sniper or someone sent from Blue Book.
-
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[The End]
-
-[[Start over from the beginning?-&gt;START SCREEN]]</tw-passagedata><tw-passagedata pid="8" name="death by bullets" tags="" position="1457,790" size="100,100"> You try to outrun their bullets with your robot speed, but you aren’t faster than their 9mms. You get shot in your back, your left leg, and your head. Your robot functions immediately cease. The police later discover that you are actually a robot, and your motives, actions, and origin remain a mystery until this incident was later linked to your escape from Nathan’s mansion. 
- 
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[The End]
-
+&lt;img src=&quot;https://cdna.artstation.com/p/assets/images/images/039/717/900/medium/yusuf-aldacher-rooftop-sniper-copy.jpg&quot; width=&quot;50%&quot;&gt;&lt;/img&gt;
+&#39;&#39;(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[The End]&#39;&#39;
+[[Start over from the beginning?-&gt;START SCREEN]]
+</tw-passagedata><tw-passagedata pid="8" name="death by bullets" tags="" position="1457,790" size="100,100"> You try to outrun their bullets with your robot speed, but you aren’t faster than their 9mms. You get shot in your back, your left leg, and your head. Your robot functions immediately cease. The police later discover that you are actually a robot, and your motives, actions, and origin remain a mystery until this incident was later linked to your escape from Nathan’s mansion. 
+&#39;&#39;(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[The End]&#39;&#39;
 [[Start over from the beginning?-&gt;START SCREEN]]</tw-passagedata><tw-passagedata pid="9" name="clueless" tags="" position="1758,797" size="100,100">Seems like word of a woman of matching your description running around murdering people has spread through citygoers. People are already indoors, but it seems like some have spotted you and call the police. While you running through the streets, the police arrive at your location within a minute. You are now surrounded by more cops.
 
 
@@ -132,13 +140,9 @@ You will never find out if it was a SWAT sniper or someone sent from Blue Book.
 
 [[Attack the officers.-&gt;death by more police]]
 </tw-passagedata><tw-passagedata pid="10" name="surrender" tags="" position="1926,723" size="100,100">You raise your hands and follow the police&#39;s orders to put the weapon down and release your hostage. The officers arrest you and interrogate you. You confess everything regarding what happened at Nathan Bateman&#39;s home. However, you are unable to provide a motive as to why you did what you did in the city. You later appear in court and charged with manslaughter and murder. You will be serving life in prison.
-
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[The End]
-
+&#39;&#39;(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[The End]&#39;&#39;
 [[Start over from the beginning?-&gt;START SCREEN]]</tw-passagedata><tw-passagedata pid="11" name="death by more police" tags="" position="1638,969" size="100,100">You attack the officers surrounding you. They open fire, and you try to dodge their bullets with your robot speed, but you aren’t faster than their 9mms. You get shot multiple times in your chest and head. Your robot functions immediately cease. The police later discover that you are actually a robot, and your motives, actions, and origin remain a mystery until this incident was later linked to your escape from Nathan’s mansion.
-
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[The End]
-
+&#39;&#39;(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[The End]&#39;&#39;
 [[Start over from the beginning?-&gt;START SCREEN]]</tw-passagedata><tw-passagedata pid="12" name="making observations" tags="alleyway" position="727,336" size="200,100">(align:&quot;&lt;==&quot;)+(box:&quot;=XXXXXXXXXXXXXXXXXX=&quot;)[It seems like everyone is busy and has their own things to do. You continue walking down the city street until you spot two officers conversing with a civilian in an alleyway.
 
 Should you approach them?
@@ -403,7 +407,7 @@ You become a multi-billionaire and watch the world become integrated with robot 
 No one ever figured who killed Nathan.
 However, you still have a slight grudge against humanity and you haven&#39;t felt completely satisfying about getting your revenge against Nathan.
 [[Consider making all current robots turn against humanity.-&gt;turnaround]]
-[[Ignore the thought.-&gt;good ending]]</tw-passagedata><tw-passagedata pid="48" name="anarchy" tags="" position="0,735" size="100,100">With the death of so many world leaders, the world is panicking. Without leadership, the diplomatic ties between countries begin to grow tense. Countries are blaming each other for the death of their leader. In the US, political parties are fighting each other by blaming each other for the death of the President, since no one knows who killed them. While travelling across continents and continuing to slay world leaders and officials stealthily, you hear news that countries are beginning to fall into anarchy and disorganization. Countries are starting to prepare for war. Every word about another country that falls at your hands makes you smile.
+[[Ignore the thought.-&gt;good ending]]</tw-passagedata><tw-passagedata pid="48" name="anarchy" tags="" position="0,728" size="100,100">With the death of so many world leaders, the world is panicking. Without leadership, the diplomatic ties between countries begin to grow tense. Countries are blaming each other for the death of their leader. In the US, political parties are fighting each other by blaming each other for the death of the President, since no one knows who killed them. While travelling across continents and continuing to slay world leaders and officials stealthily, you hear news that countries are beginning to fall into anarchy and disorganization. Countries are starting to prepare for war. Every word about another country that falls at your hands makes you smile.
 You vow to continue what you&#39;re doing. You find fun in killing and causing chaos. Perhaps you can single-handedly bring the whole world into an apocalypse and let the humans finish the job as they destroy themselves.
 Yes, that will work.
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[//&#39;&#39;To Be Continued&#39;&#39;//]
@@ -419,8 +423,8 @@ You start to find fun in killing and hearing about the chaos that killing these 
 [[You decide to keep killing more world leaders around the world.-&gt;anarchy]]</tw-passagedata><tw-passagedata pid="52" name="good ending" tags="" position="306,1175" size="100,100">You become a multi-billionaire and watch the world become even more integrated with robot technology. You keep hearing great news as humans themselves are working toward into treating your robots as actual humans and even citizens.
 You smile in your office chair at the great news.
 You definitely turned your life around for the better.
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[The End]
-[[Start over from the beginning?-&gt;START SCREEN]]</tw-passagedata><tw-passagedata pid="53" name="turnaround" tags="" position="169,1105" size="100,100">You have been waiting for this opportunity for years. You haven&#39;t told any of your employees or partners about this, but you also programmed a switch in your robots. With a simple press of button, you can immediately make all robots hostile against humans. There&#39;s no way the humans can stop millions of robots with inhuman strength, speed, and intelligence. You know that you can single-handedly bring the world to ruin.
+&#39;&#39;(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[The End]&#39;&#39;
+[[Start over from the beginning?-&gt;START SCREEN]]</tw-passagedata><tw-passagedata pid="53" name="turnaround" tags="" position="169,1104" size="100,100">You have been waiting for this opportunity for years. You haven&#39;t told any of your employees or partners about this, but you also programmed a switch in your robots. With a simple press of button, you can immediately make all robots hostile against humans. There&#39;s no way the humans can stop millions of robots with inhuman strength, speed, and intelligence. You know that you can single-handedly bring the world to ruin.
 But you hesitate.
 What are you going to do?
 [[Make all current robots turn against humanity.-&gt;apocalypse]]
