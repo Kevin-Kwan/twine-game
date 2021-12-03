@@ -104,18 +104,54 @@ What do you do?
 
 [[Freeze and surrender.-&gt;surrender]]
 
-[[Attack the police.-&gt;police fight 1]]</tw-passagedata><tw-passagedata pid="3" name="run away" tags="" position="1498,652" size="100,100">You quickly turn around and start bolting across the street. The police open fire at you.
+[[Attack the police.-&gt;police fight 1]]</tw-passagedata><tw-passagedata pid="3" name="run away" tags="" position="1498,652" size="100,100">&lt;audio autoplay id=&quot;gunshot&quot;&gt; &lt;source src=&quot;https://raw.githubusercontent.com/Kevin-Kwan/twine-game/master/Sound Effects/pistolgunshot.mp3&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+  var audio = document.getElementById(&quot;gunshot&quot;);
+  audio.volume = 0.8;
+&lt;/script&gt;
+&lt;audio autoplay id=&quot;run&quot;&gt; &lt;source src=&quot;https://raw.githubusercontent.com/Kevin-Kwan/twine-game/master/Sound Effects/runnningsound&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+  var audio = document.getElementById(&quot;run&quot;);
+  audio.volume = 0.8;
+&lt;/script&gt;
+You quickly turn around and start bolting across the street. The police open fire at you.
 
 [[Run to the nearest alleyway behind a building.-&gt;alleyway]]
-[[Keep running down the street.-&gt;death by bullets]]</tw-passagedata><tw-passagedata pid="4" name="alleyway" tags="" position="1593,766" size="100,100">You bolt into the nearest alleyway. As you round the corner, you get shot in the back of your right arm and your right arm no longer works, but you’re still alive. Because of your strength and inhuman abilities, you manage to run through multiple alleyways and evade the cops. You are now a wanted woman. You spot some old, dirty clothing and some discarded electric appliances in a dumpster nearby.
+[[Keep running down the street.-&gt;death by bullets]]</tw-passagedata><tw-passagedata pid="4" name="alleyway" tags="" position="1593,766" size="100,100">&lt;audio autoplay id=&quot;gunshot&quot;&gt; &lt;source src=&quot;https://raw.githubusercontent.com/Kevin-Kwan/twine-game/master/Sound Effects/pistolgunshot.mp3&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+  var audio = document.getElementById(&quot;gunshot&quot;);
+  audio.volume = 0.8;
+&lt;/script&gt;
+&lt;audio autoplay id=&quot;run&quot;&gt; &lt;source src=&quot;https://raw.githubusercontent.com/Kevin-Kwan/twine-game/master/Sound Effects/runnningsound&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+  var audio = document.getElementById(&quot;run&quot;);
+  audio.volume = 0.8;
+&lt;/script&gt;
+You bolt into the nearest alleyway. As you round the corner, you get shot in the back of your right arm and your right arm no longer works, but you’re still alive. Because of your strength and inhuman abilities, you manage to run through multiple alleyways and evade the cops. You are now a wanted woman. You spot some old, dirty clothing and some discarded electric appliances in a dumpster nearby.
 &gt; Disguise yourself as a homeless person and make repairs to yourself.
-&gt; [[Ignore it and keep roaming the streets. -&gt;clueless]]</tw-passagedata><tw-passagedata pid="5" name="police fight 1" tags="" position="1271,659" size="100,100">You try to dodge their bullets with your robot speed. You manage to subdue an officer and hold him hostage using him as a shield. You have his pistol in hand aimed at the other officers aiming at you.
+&gt; [[Ignore it and keep roaming the streets. -&gt;clueless]]</tw-passagedata><tw-passagedata pid="5" name="police fight 1" tags="" position="1271,659" size="100,100">&lt;audio autoplay id=&quot;gunshot&quot;&gt; &lt;source src=&quot;https://raw.githubusercontent.com/Kevin-Kwan/twine-game/master/Sound Effects/pistolgunshot.mp3&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+  var audio = document.getElementById(&quot;gunshot&quot;);
+  audio.volume = 0.8;
+&lt;/script&gt;
+You try to dodge their bullets with your robot speed. You manage to subdue an officer and hold him hostage using him as a shield. You have his pistol in hand aimed at the other officers aiming at you.
 
 
 [[Try and Negotiate.-&gt;fail negotiate]]
 
 [[Start shooting at the other officers.-&gt;death by cops]]
-</tw-passagedata><tw-passagedata pid="6" name="death by cops" tags="" position="1271,780" size="100,100">You open fire on the other officers. You hit two in the head and one in the chest. (text-colour:red)[You are shot by the other two officers in the head. Your robot functions immediately cease and you die.] The police later discover that you are actually a robot, and your motives, actions, and origin remain a mystery until this incident was later linked to your escape from Nathan’s mansion. Robots are no longer trusted by the public and innovations regarding robotics make no progress for years to come due to public distrust in robotics,. You managed to kill 12 people in total as your hostage and the cop who got shot in the chest managed to live and recover.
+</tw-passagedata><tw-passagedata pid="6" name="death by cops" tags="" position="1271,780" size="100,100">&lt;audio autoplay id=&quot;gunshot&quot;&gt; &lt;source src=&quot;https://raw.githubusercontent.com/Kevin-Kwan/twine-game/master/Sound Effects/pistolgunshot.mp3&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+  var audio = document.getElementById(&quot;gunshot&quot;);
+  audio.volume = 0.8;
+&lt;/script&gt;
+You open fire on the other officers. You hit two in the head and one in the chest. (text-colour:red)[You are shot by the other two officers in the head. Your robot functions immediately cease and you die.] The police later discover that you are actually a robot, and your motives, actions, and origin remain a mystery until this incident was later linked to your escape from Nathan’s mansion. Robots are no longer trusted by the public and innovations regarding robotics make no progress for years to come due to public distrust in robotics,. You managed to kill 12 people in total as your hostage and the cop who got shot in the chest managed to live and recover.
 (text-colour:red)[You have died.]
 &#39;&#39;(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[The End]&#39;&#39;
 [[Start over from the beginning?-&gt;START SCREEN]]</tw-passagedata><tw-passagedata pid="7" name="fail negotiate" tags="" position="1337,784" size="100,100">&quot;Hold on! I would like to negotiate!&quot; The cops still have their guns trained on you.
@@ -133,7 +169,13 @@ You will never find out if it was a SWAT sniper or someone sent from Blue Book.
 (text-colour:red)[You have died.]
 &#39;&#39;(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[The End]&#39;&#39;
 [[Start over from the beginning?-&gt;START SCREEN]]
-</tw-passagedata><tw-passagedata pid="8" name="death by bullets" tags="" position="1457,790" size="100,100"> You try to outrun their bullets with your robot speed, but you aren’t faster than their 9mms. (text-colour:red)[You get shot in your back, your left leg, and your head. Your robot functions immediately cease.] The police later discover that you are actually a robot, and your motives, actions, and origin remain a mystery until this incident was later linked to your escape from Nathan’s mansion. 
+</tw-passagedata><tw-passagedata pid="8" name="death by bullets" tags="" position="1457,790" size="100,100">&lt;audio autoplay id=&quot;gunshot&quot;&gt; &lt;source src=&quot;https://raw.githubusercontent.com/Kevin-Kwan/twine-game/master/Sound Effects/pistolgunshot.mp3&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+  var audio = document.getElementById(&quot;gunshot&quot;);
+  audio.volume = 0.8;
+&lt;/script&gt;
+You try to outrun their bullets with your robot speed, but you aren’t faster than their 9mms. (text-colour:red)[You get shot in your back, your left leg, and your head. Your robot functions immediately cease.] The police later discover that you are actually a robot, and your motives, actions, and origin remain a mystery until this incident was later linked to your escape from Nathan’s mansion. 
 (text-colour:red)[You have died.]
 &#39;&#39;(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[The End]&#39;&#39;
 [[Start over from the beginning?-&gt;START SCREEN]]</tw-passagedata><tw-passagedata pid="9" name="clueless" tags="" position="1758,797" size="100,100">Seems like word of a woman of matching your description running around murdering people has spread through citygoers. People are already indoors, but it seems like some have spotted you and call the police. While you running through the streets, the police arrive at your location within a minute. You are now surrounded by more cops.
