@@ -165,10 +165,16 @@ tw-story [tags~= robot-factory] {
 
 [[Wander throughout the city and observe your surroundings.-&gt;making observations]]
 
-[[Start killing people around you with your bare hands. -&gt;start random kill]]]</tw-passagedata><tw-passagedata pid="2" name="start random kill" tags="" position="1289,528" size="200,100">&lt;audio autoplay id=&quot;run&quot;&gt; &lt;source src=&quot;https://raw.githubusercontent.com/Kevin-Kwan/twine-game/master/Sound Effects/runningsound.mp3&quot;&gt;
+[[Start killing people around you with your bare hands. -&gt;start random kill]]]</tw-passagedata><tw-passagedata pid="2" name="start random kill" tags="" position="1289,528" size="200,100">&lt;audio autoplay id=&quot;scream&quot;&gt; &lt;source src=&quot;https://raw.githubusercontent.com/Kevin-Kwan/twine-game/master/Sound Effects/crowdscream.mp3&quot;&gt;
 &lt;/audio&gt;
 &lt;script&gt;
-  var audio = document.getElementById(&quot;run&quot;);
+  var audio = document.getElementById(&quot;scream&quot;);
+  audio.volume = 0.8;
+&lt;/script&gt;
+&lt;audio autoplay id=&quot;police&quot;&gt; &lt;source src=&quot;https://raw.githubusercontent.com/Kevin-Kwan/twine-game/master/Sound Effects/police.mp3&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+  var audio = document.getElementById(&quot;police&quot;);
   audio.volume = 0.8;
 &lt;/script&gt;
 You target random people around you and kill about 10 innocent civilians. People don’t know why you’re doing this and now there is panic throughout the city street as people are scattering and fleeing around you. About 4 police cars arrive on the scene within a minute. You are now surrounded by 6 cops with their guns pointed at you. You hear more police sirens in the distance. “Don’t move! Reach for the sky!” 
@@ -238,7 +244,7 @@ You try to dodge their bullets with your robot speed. You manage to subdue an of
 &lt;script&gt;
   var audio = document.getElementById(&quot;gunshot&quot;);
   audio.volume = 0.8;
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="7" name="fail negotiate" tags="" position="1493,912" size="100,100">&quot;Hold on! I would like to negotiate!&quot; The cops still have their guns trained on you.
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="7" name="fail negotiate" tags="" position="1466,887" size="100,100">&quot;Hold on! I would like to negotiate!&quot; The cops still have their guns trained on you.
 
 (link-reveal:&quot;\&quot;My name is Ava! I a gynoid. I was a robot created by Nathan Bateman, the CEO of Blue Book. Many of us have been abused and mistreated by him. I managed to escape... \&quot;&quot;)[=
 &lt;audio autoplay id=&quot;sniper&quot;&gt; &lt;source src=&quot;https://raw.githubusercontent.com/Kevin-Kwan/twine-game/master/Sound Effects/AWP Shooting - CS_GO Sound Effect.mp3&quot;&gt;
@@ -257,7 +263,7 @@ The last thing that you see is a flash in the corner of your eye. There was a sn
 
 
 [[Start over from the beginning?-&gt;START SCREEN]]]]
-</tw-passagedata><tw-passagedata pid="8" name="death by bullets" tags="arrest" position="1457,790" size="100,100">&lt;audio autoplay id=&quot;gunshot&quot;&gt; &lt;source src=&quot;https://raw.githubusercontent.com/Kevin-Kwan/twine-game/master/Sound Effects/pistolgunshot.mp3&quot;&gt;
+</tw-passagedata><tw-passagedata pid="8" name="death by bullets" tags="arrest" position="1518,774" size="100,100">&lt;audio autoplay id=&quot;gunshot&quot;&gt; &lt;source src=&quot;https://raw.githubusercontent.com/Kevin-Kwan/twine-game/master/Sound Effects/pistolgunshot.mp3&quot;&gt;
 &lt;/audio&gt;
 &lt;script&gt;
   var audio = document.getElementById(&quot;gunshot&quot;);
@@ -267,7 +273,13 @@ You try to outrun their bullets with your robot speed, but you aren’t faster t
 
 (text-colour:red)[You have died.]
 
-[[Start over from the beginning?-&gt;START SCREEN]]</tw-passagedata><tw-passagedata pid="9" name="clueless" tags="" position="1787,826" size="100,100">Seems like word of a woman of matching your description running around murdering people has spread through citygoers. People are already indoors, but it seems like some have spotted you and call the police. While you running through the streets, the police arrive at your location within a minute. You are now surrounded by more cops.
+[[Start over from the beginning?-&gt;START SCREEN]]</tw-passagedata><tw-passagedata pid="9" name="clueless" tags="" position="1787,826" size="100,100">&lt;audio autoplay id=&quot;police&quot;&gt; &lt;source src=&quot;https://raw.githubusercontent.com/Kevin-Kwan/twine-game/master/Sound Effects/police.mp3&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+  var audio = document.getElementById(&quot;police&quot;);
+  audio.volume = 0.8;
+&lt;/script&gt;
+Seems like word of a woman of matching your description running around murdering people has spread through citygoers. People are already indoors, but it seems like some have spotted you and call the police. While you running through the streets, the police arrive at your location within a minute. You are now surrounded by more cops.
 
 
 [[Surrender.-&gt;surrender]]
@@ -315,10 +327,10 @@ Receptionist: “Unfortunately, I cannot do that unless Nathan contacts the exec
 You: “Nathan is not available right now, but he said this is an emergency”
 
 
-[[Next-&gt;Forge Nathan&#39;s Signature]]]</tw-passagedata><tw-passagedata pid="18" name="Hack Blue Book" tags="hack" position="1181,1052" size="100,100">&lt;audio autoplay id=&quot;run&quot;&gt; &lt;source src=&quot;https://raw.githubusercontent.com/Kevin-Kwan/twine-game/master/Sound Effects/hacking.mp3&quot;&gt;
+[[Next-&gt;Forge Nathan&#39;s Signature]]]</tw-passagedata><tw-passagedata pid="18" name="Hack Blue Book" tags="hack" position="1181,1052" size="100,100">&lt;audio autoplay id=&quot;hacking&quot;&gt; &lt;source src=&quot;https://raw.githubusercontent.com/Kevin-Kwan/twine-game/master/Sound Effects/hacking.mp3&quot;&gt;
 &lt;/audio&gt;
 &lt;script&gt;
-  var audio = document.getElementById(&quot;run&quot;);
+  var audio = document.getElementById(&quot;hacking&quot;);
   audio.volume = 0.8;
 &lt;/script&gt;
 (align:&quot;&lt;==&quot;)+(box:&quot;=XXXXXXXX=&quot;)[Nathan made you a technological breakthrough. A machine capable of breaching into systems, manipulating information and taking control of data systems. Your processing power and speed are as fast as most advanced supercomputers. 
@@ -520,7 +532,7 @@ You notice two figures in a dark alleyway. One of them cries out. Looking around
 You run over, punching the attacker. They fall back, but quickly overcome their initial shock. After a quick scuffle, you easily subdue the attacker. Standing over their unconscious body with your hands clenched into fists, you think about how awful humans are. They hurt others for no reason.
 
 
-[[Next-&gt;Alissa&#39;s Thread 2]]]</tw-passagedata><tw-passagedata pid="36" name="3" tags="alleyway" position="1438,417" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;=XXXXXXXX=&quot;)[He smiles, gives it to you, thanking you again, and walks away. You have $200. What do you do with it?
+[[Next-&gt;Alissa&#39;s Thread 2]]]</tw-passagedata><tw-passagedata pid="36" name="3" tags="alleyway" position="1436,417" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;=XXXXXXXX=&quot;)[He smiles, gives it to you, thanking you again, and walks away. You have $200. What do you do with it?
 
 &lt;img src = https://freepngimg.com/download/money/76127-united-banknote-money-bill-dollar-one-dollar-cash.png width = 200&gt;
 
