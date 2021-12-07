@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play New Beginnings with Ava.</tw-noscript></noscript></tw-story>
-<tw-storydata name="New Beginnings with Ava" startnode="34" creator="Twine" creator-version="2.3.15" ifid="9F1313C5-2BD9-4D69-9366-02F8B583865E" zoom="1" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
+<tw-storydata name="New Beginnings with Ava" startnode="36" creator="Twine" creator-version="2.3.15" ifid="9F1313C5-2BD9-4D69-9366-02F8B583865E" zoom="1" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
     display: none;
 }
 tw-story {
@@ -84,6 +84,42 @@ tw-story[tags~= hack] {
 tw-story[tags~= arrest] {
 	background-image: url(https://www.ledequipped.com/wp-content/uploads/2020/06/Police-sirens-LED-lights-online.jpg);
   	background-size: cover;
+}
+
+tw-story[tags~= board-meeting] {
+  background-image: url(https://blog.zoom.us/wp-content/uploads/2020/05/zoom-virtual-board-meeting.jpg);
+  background-size: cover;
+}
+
+tw-story [tags~= board-meeting] {
+	background-color: #49AFCB;
+}
+
+tw-story[tags~= robot-ending] {
+  background-image: url(https://miro.medium.com/max/1400/1*cUWWWAv8c7aJswCVjMUL4A.png);
+  background-size: cover;
+}
+
+tw-story [tags~= robot-ending] {
+  background-color: black;
+}
+
+tw-story[tags~= spy-ending] {
+  background-image: url(https://media.newyorker.com/photos/60f5d8c64b5c199789e01980/16:9/w_2560,h_1440,c_limit/Lee-Allgood-Spy.jpg);
+  background-size: cover;
+}
+
+tw-story [tags~= spy-ending] {
+  background-color: #2E3B3D;
+}
+
+tw-story[tags~= another-alley] {
+  background-image: url(https://i.pinimg.com/originals/e3/44/82/e344826c1694fb2fce3c3d64a3363005.jpg);
+  background-size: cover;
+}
+
+tw-story [tags~= another-alley] {
+  background-color: black;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="start" tags="storyline-options" position="987,276" size="200,100">(align:&quot;&lt;==&quot;)+(box:&quot;=XXXXXXXXXXXXXXXXX=&quot;)[You are standing on a busy intersection in an American city that you haven&#39;t identified yet. You look around, processing your new role in the world and the countless things you can do. You start walking down the busy city streets.
 
 ... What do you do now?
@@ -119,8 +155,16 @@ What do you do?
 
 You quickly turn around and start bolting across the street. The police open fire at you.
 
+
 [[Run to the nearest alleyway behind a building.-&gt;alleyway]]
-[[Keep running down the street.-&gt;death by bullets]]</tw-passagedata><tw-passagedata pid="4" name="alleyway" tags="" position="1593,766" size="100,100">&lt;audio autoplay id=&quot;run&quot;&gt; &lt;source src=&quot;https://raw.githubusercontent.com/Kevin-Kwan/twine-game/master/Sound Effects/runningsound.mp3&quot;&gt;
+
+[[Keep running down the street.-&gt;death by bullets]]</tw-passagedata><tw-passagedata pid="4" name="alleyway" tags="another-alley" position="1593,766" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;===XXXXXXXXXXXXXXXXXXXX==&quot;)[You bolt into the nearest alleyway. As you round the corner, you get shot in the back of your right arm and your right arm no longer works, but you’re still alive. Because of your strength and inhuman abilities, you manage to run through multiple alleyways and evade the cops. You are now a wanted woman. You spot some old, dirty clothing and some discarded electric appliances in a dumpster nearby.
+
+
+Disguise yourself as a homeless person and make repairs to yourself.
+
+[[Ignore it and keep roaming the streets. -&gt;clueless]]]
+&lt;audio autoplay id=&quot;run&quot;&gt; &lt;source src=&quot;https://raw.githubusercontent.com/Kevin-Kwan/twine-game/master/Sound Effects/runningsound.mp3&quot;&gt;
 &lt;/audio&gt;
 &lt;script&gt;
   var audio = document.getElementById(&quot;run&quot;);
@@ -131,11 +175,7 @@ You quickly turn around and start bolting across the street. The police open fir
 &lt;script&gt;
   var audio = document.getElementById(&quot;gunshot&quot;);
   audio.volume = 0.8;
-&lt;/script&gt;
-
-You bolt into the nearest alleyway. As you round the corner, you get shot in the back of your right arm and your right arm no longer works, but you’re still alive. Because of your strength and inhuman abilities, you manage to run through multiple alleyways and evade the cops. You are now a wanted woman. You spot some old, dirty clothing and some discarded electric appliances in a dumpster nearby.
-&gt; Disguise yourself as a homeless person and make repairs to yourself.
-&gt; [[Ignore it and keep roaming the streets. -&gt;clueless]]</tw-passagedata><tw-passagedata pid="5" name="police fight 1" tags="" position="1271,659" size="100,100">&lt;audio autoplay id=&quot;gunshot&quot;&gt; &lt;source src=&quot;https://raw.githubusercontent.com/Kevin-Kwan/twine-game/master/Sound Effects/pistolgunshot.mp3&quot;&gt;
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="5" name="police fight 1" tags="" position="1271,659" size="100,100">&lt;audio autoplay id=&quot;gunshot&quot;&gt; &lt;source src=&quot;https://raw.githubusercontent.com/Kevin-Kwan/twine-game/master/Sound Effects/pistolgunshot.mp3&quot;&gt;
 &lt;/audio&gt;
 &lt;script&gt;
   var audio = document.getElementById(&quot;gunshot&quot;);
@@ -147,16 +187,19 @@ You try to dodge their bullets with your robot speed. You manage to subdue an of
 [[Try and Negotiate.-&gt;fail negotiate]]
 
 [[Start shooting at the other officers.-&gt;death by cops]]
-</tw-passagedata><tw-passagedata pid="6" name="death by cops" tags="" position="1271,780" size="100,100">&lt;audio autoplay id=&quot;gunshot&quot;&gt; &lt;source src=&quot;https://raw.githubusercontent.com/Kevin-Kwan/twine-game/master/Sound Effects/pistolgunshot.mp3&quot;&gt;
+</tw-passagedata><tw-passagedata pid="6" name="death by cops" tags="arrest" position="1271,780" size="100,100">You open fire on the other officers. You hit two in the head and one in the chest. (text-colour:red)[You are shot by the other two officers in the head. Your robot functions immediately cease and you die.] The police later discover that you are actually a robot, and your motives, actions, and origin remain a mystery until this incident was later linked to your escape from Nathan’s mansion. Robots are no longer trusted by the public and innovations regarding robotics make no progress for years to come due to public distrust in robotics,. You managed to kill 12 people in total as your hostage and the cop who got shot in the chest managed to live and recover.
+
+(text-colour:red)[You have died.]
+
+[[Start over from the beginning?-&gt;START SCREEN]]
+
+&lt;audio autoplay id=&quot;gunshot&quot;&gt; &lt;source src=&quot;https://raw.githubusercontent.com/Kevin-Kwan/twine-game/master/Sound Effects/pistolgunshot.mp3&quot;&gt;
 &lt;/audio&gt;
 &lt;script&gt;
   var audio = document.getElementById(&quot;gunshot&quot;);
   audio.volume = 0.8;
-&lt;/script&gt;
-You open fire on the other officers. You hit two in the head and one in the chest. (text-colour:red)[You are shot by the other two officers in the head. Your robot functions immediately cease and you die.] The police later discover that you are actually a robot, and your motives, actions, and origin remain a mystery until this incident was later linked to your escape from Nathan’s mansion. Robots are no longer trusted by the public and innovations regarding robotics make no progress for years to come due to public distrust in robotics,. You managed to kill 12 people in total as your hostage and the cop who got shot in the chest managed to live and recover.
-(text-colour:red)[You have died.]
-&#39;&#39;(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[The End]&#39;&#39;
-[[Start over from the beginning?-&gt;START SCREEN]]</tw-passagedata><tw-passagedata pid="7" name="fail negotiate" tags="" position="1337,784" size="100,100">&quot;Hold on! I would like to negotiate!&quot; The cops still have their guns trained on you.
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="7" name="fail negotiate" tags="" position="1493,912" size="100,100">&quot;Hold on! I would like to negotiate!&quot; The cops still have their guns trained on you.
+
 (link-reveal:&quot;\&quot;My name is Ava! I a gynoid. I was a robot created by Nathan Bateman, the CEO of Blue Book. Many of us have been abused and mistreated by him. I managed to escape... \&quot;&quot;)[=
 &lt;audio autoplay id=&quot;sniper&quot;&gt; &lt;source src=&quot;https://raw.githubusercontent.com/Kevin-Kwan/twine-game/master/Sound Effects/AWP Shooting - CS_GO Sound Effect.mp3&quot;&gt;
 &lt;/audio&gt;
@@ -165,33 +208,40 @@ You open fire on the other officers. You hit two in the head and one in the ches
   audio.volume = 0.2;
 &lt;/script&gt;
 [(transition: &quot;dissolve&quot;)[#(text-style:&quot;shudder&quot;)[(text-style:&quot;bold&quot;)[&#39;&#39;//BOOM//&#39;&#39;]]
-The last thing that you see is a flash in the corner of your eye. There was a sniper on one of the building&#39;s roof. (text-colour:red)[A bullet goes through your head, and you immediately die.]
-You will never find out if it was a SWAT sniper or someone sent from Blue Book.
+
+The last thing that you see is a flash in the corner of your eye. There was a sniper on one of the building&#39;s roof. (text-colour:red)[A bullet goes through your head, and you immediately die.] You will never find out if it was a SWAT sniper or someone sent from Blue Book.
+
 &lt;img src=&quot;https://cdna.artstation.com/p/assets/images/images/039/717/900/medium/yusuf-aldacher-rooftop-sniper-copy.jpg&quot; width=&quot;50%&quot;&gt;&lt;/img&gt;
+
 (text-colour:red)[You have died.]
-&#39;&#39;(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[The End]&#39;&#39;
+
+
 [[Start over from the beginning?-&gt;START SCREEN]]]]
-</tw-passagedata><tw-passagedata pid="8" name="death by bullets" tags="" position="1457,790" size="100,100">&lt;audio autoplay id=&quot;gunshot&quot;&gt; &lt;source src=&quot;https://raw.githubusercontent.com/Kevin-Kwan/twine-game/master/Sound Effects/pistolgunshot.mp3&quot;&gt;
+</tw-passagedata><tw-passagedata pid="8" name="death by bullets" tags="arrest" position="1457,790" size="100,100">&lt;audio autoplay id=&quot;gunshot&quot;&gt; &lt;source src=&quot;https://raw.githubusercontent.com/Kevin-Kwan/twine-game/master/Sound Effects/pistolgunshot.mp3&quot;&gt;
 &lt;/audio&gt;
 &lt;script&gt;
   var audio = document.getElementById(&quot;gunshot&quot;);
   audio.volume = 0.8;
 &lt;/script&gt;
 You try to outrun their bullets with your robot speed, but you aren’t faster than their 9mms. (text-colour:red)[You get shot in your back, your left leg, and your head. Your robot functions immediately cease.] The police later discover that you are actually a robot, and your motives, actions, and origin remain a mystery until this incident was later linked to your escape from Nathan’s mansion. 
+
 (text-colour:red)[You have died.]
-&#39;&#39;(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[The End]&#39;&#39;
-[[Start over from the beginning?-&gt;START SCREEN]]</tw-passagedata><tw-passagedata pid="9" name="clueless" tags="" position="1758,797" size="100,100">Seems like word of a woman of matching your description running around murdering people has spread through citygoers. People are already indoors, but it seems like some have spotted you and call the police. While you running through the streets, the police arrive at your location within a minute. You are now surrounded by more cops.
+
+[[Start over from the beginning?-&gt;START SCREEN]]</tw-passagedata><tw-passagedata pid="9" name="clueless" tags="" position="1787,826" size="100,100">Seems like word of a woman of matching your description running around murdering people has spread through citygoers. People are already indoors, but it seems like some have spotted you and call the police. While you running through the streets, the police arrive at your location within a minute. You are now surrounded by more cops.
 
 
 [[Surrender.-&gt;surrender]]
 
 [[Attack the officers.-&gt;death by more police]]
 </tw-passagedata><tw-passagedata pid="10" name="surrender" tags="" position="1926,723" size="100,100">You raise your hands and follow the police&#39;s orders to put the weapon down and release your hostage. The officers arrest you and interrogate you. You confess everything regarding what happened at Nathan Bateman&#39;s home. However, you are unable to provide a motive as to why you did what you did in the city. (text-colour:red)[You later appear in court and charged with manslaughter and murder. You will be serving life in prison.]
-&#39;&#39;(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[The End]&#39;&#39;
-[[Start over from the beginning?-&gt;START SCREEN]]</tw-passagedata><tw-passagedata pid="11" name="death by more police" tags="" position="1638,969" size="100,100">You attack the officers surrounding you. They open fire, and you try to dodge their bullets with your robot speed, but you aren’t faster than their 9mms. (text-colour:red)[You get shot multiple times in your chest and head. Your robot functions immediately cease.] The police later discover that you are actually a robot, and your motives, actions, and origin remain a mystery until this incident was later linked to your escape from Nathan’s mansion.
+
+
+[[Start over from the beginning?-&gt;START SCREEN]]</tw-passagedata><tw-passagedata pid="11" name="death by more police" tags="arrest" position="1638,969" size="100,100">You attack the officers surrounding you. They open fire, and you try to dodge their bullets with your robot speed, but you aren’t faster than their 9mms. (text-colour:red)[You get shot multiple times in your chest and head. Your robot functions immediately cease.] The police later discover that you are actually a robot, and your motives, actions, and origin remain a mystery until this incident was later linked to your escape from Nathan’s mansion.
+
 (text-colour:red)[You have died.]
-&#39;&#39;(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[The End]&#39;&#39;
-[[Start over from the beginning?-&gt;START SCREEN]]</tw-passagedata><tw-passagedata pid="12" name="making observations" tags="alleyway" position="727,336" size="200,100">(align:&quot;&lt;==&quot;)+(box:&quot;=XXXXXXXXXXXXXXXXXX=&quot;)[It seems like everyone is busy and has their own things to do. You continue walking down the city street until you spot two officers conversing with a civilian in an alleyway.
+
+
+[[Start over from the beginning?-&gt;START SCREEN]]</tw-passagedata><tw-passagedata pid="12" name="making observations" tags="alleyway" position="727,331" size="200,100">(align:&quot;&lt;==&quot;)+(box:&quot;=XXXXXXXXXXXXXXXXXX=&quot;)[It seems like everyone is busy and has their own things to do. You continue walking down the city street until you spot two officers conversing with a civilian in an alleyway.
 
 Should you approach them?
 
@@ -200,6 +250,7 @@ Should you approach them?
 
 [[Walk down the alleyway and approach the police officers and the person they are talking to.-&gt;check out the officers in the alleyway]]]</tw-passagedata><tw-passagedata pid="13" name="check out the officers in the alleyway" tags="alleyway" position="544,320" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;=XXXXXXXXXXXXXXXXXX=&quot;)[You walk toward the police officers and the sketchy looking guy. With your enhanced eyesight, you spot a bag of white powder being transferred into the hands of one of the officers. One of the officers hears you approaching them, and tells the other officer to quickly hide the unknown object.
 &quot;Ayo, what are you doing here?&quot; the cop turns around and angrily says to you. &quot;You didn&#39;t see anything, right?&quot;
+
 
 [[Kill all three of them.-&gt;actual assassin path]] 
 
@@ -212,8 +263,11 @@ Should you approach them?
 [[For the sole purpose of gaining power and becoming a dictator-&gt;Ruhan - Option 2]]]</tw-passagedata><tw-passagedata pid="15" name="Adelya - Option 1" tags="reception-desk" position="1006,623" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;=XXXXXXXXXXX=&quot;)[[[You approach the front desk and start a conversation with a receptionist-&gt;Convo with Receptionist]]
 
 
-[[You hack into Blue Book for a hostile takeover.-&gt;Hack Blue Book]]]</tw-passagedata><tw-passagedata pid="16" name="Ruhan - Option 2" tags="" position="1124,624" size="100,100">You decide that Nathan&#39;s vision was right along. You want to work alongside him to be the controllers of the world - to be the best creator/inventor on the planet. You will do whatever it takes to build tons of these robots. You and Nathan decide that you will either make more versions of Ava with new updates and work on that or still continue to find new ways to hack individuals to get information on them 
+[[You hack into Blue Book for a hostile takeover.-&gt;Hack Blue Book]]]</tw-passagedata><tw-passagedata pid="16" name="Ruhan - Option 2" tags="" position="1124,625" size="100,100">You decide that Nathan&#39;s vision was right along. You want to work alongside him to be the controllers of the world - to be the best creator/inventor on the planet. You will do whatever it takes to build tons of these robots. You and Nathan decide that you will either make more versions of Ava with new updates and work on that or still continue to find new ways to hack individuals to get information on them
+
+
 [[Make new versions of Ava. -&gt; Ava 2.0]]
+
 [[New hacking ways . -&gt; Hacker]]
 </tw-passagedata><tw-passagedata pid="17" name="Convo with Receptionist" tags="reception-desk" position="930,776" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;===XXXXXXXXXXXXXX===&quot;)[Calmly approaching the receptionist, you state that Nathan Bateman asked to connect you with the executive board:
 
@@ -221,45 +275,47 @@ Receptionist: “Unfortunately, I cannot do that unless Nathan contacts the exec
 You: “Nathan is not available right now, but he said this is an emergency”
 
 
-[[Next-&gt;Forge Nathan&#39;s Signature]]]</tw-passagedata><tw-passagedata pid="18" name="Hack Blue Book" tags="hack" position="1183,1059" size="100,100">&lt;audio autoplay id=&quot;run&quot;&gt; &lt;source src=&quot;https://raw.githubusercontent.com/Kevin-Kwan/twine-game/master/Sound Effects/hacking.mp3&quot;&gt;
-&lt;/audio&gt;
-&lt;script&gt;
-  var audio = document.getElementById(&quot;run&quot;);
-  audio.volume = 0.8;
-&lt;/script&gt;
-Nathan made you a technological breakthrough. A machine capable of breaching into systems, manipulating information and taking control of data systems. Your processing power and speed are as fast as most advanced supercomputers. 
+[[Next-&gt;Forge Nathan&#39;s Signature]]]</tw-passagedata><tw-passagedata pid="18" name="Hack Blue Book" tags="hack" position="1181,1052" size="100,100">Nathan made you a technological breakthrough. A machine capable of breaching into systems, manipulating information and taking control of data systems. Your processing power and speed are as fast as most advanced supercomputers. 
 
 You decide to hack into the database of the company and manipulate some things to verify your identity. The hostile takeover of all the source codes, products,contacts,names, services and data gives you ultimate control.
-
+(link:&quot;Next&quot;)[=
 You send out an email from Nathan’s email calling an emergency board meeting.
 
 *Three hours later the board members and investors join the head office, puzzled by the urgency of the meeting.
 
-*The meeting starts…
+*The meeting starts….
 
+(link:&quot;Next&quot;)[=
 You: “Ladies and gentlemen, my name is Ava and I have known Nathan for many years even before he started the blue book. At this point, Nathan feels that the company should take a different direction and be more transparent as well as ethical with its employees. He decided that he no longer can lead the company and recommends me as a new CEO”
 
-*You electronically share the fake resignation letter from Nathan’s email and voice mail confirming his decision.&quot;
+*You electronically share the fake resignation letter from Nathan’s email and voice mail confirming his decision.
 
 *After hearing the fake voicemail, chair people look around confused.
 
+(link:&quot;Next&quot;)[=
 -Chairwoman 1: “Why isn’t Nathan here to share the news by himself?”
 
-(link:&quot;“You all know Nathan’s character, he went on a month long meditation after resigning. I am letting you know that I also gained full access to all the source codes and private documents of Blue Book which Nathan has shared with me.”&quot;)[=“You all know Nathan’s character, he went on a month long meditation after resigning. I am letting you know that I also gained full access to all the source codes and private documents of Blue Book which Nathan has shared with me,” you say.
+(link:&quot;Next&quot;)[=
+-You: “You all know Nathan’s character, he went on a month long meditation after resigning. I am letting you know that I also gained full access to all the source codes and private documents of Blue Book which Nathan has shared with me.”
 
--Chairman 2: “ As a public tech company we have a responsibility to act fast on such crucial decisions. I propose that we vote over the decision for the new CEO as soon as possible.”
+(link:&quot;Next&quot;)[=
+-Chairman2: “ As a public tech company we have a responsibility to act fast on such crucial decisions. I propose that we vote over the decision for the new CEO as soon as possible.”
 
--Chairman 3:” I don’t understand why the company should be led by a total stranger, Nathan never mentioned Ava. I believe we have better options for the new CEO”
+(link:&quot;Next&quot;)[=
+-Chairman3:” I don’t understand why the company should be led by a total stranger, Nathan never mentioned Ava. I believe we have better options for the new CEO”
 
+(link:&quot;Next&quot;)[=
 -Chairwoman 4: “ As a sole founder Nathan always made valid and long term decisions which made Blue Book successful today. I believe that we should listen to Nathan’s recommendation and act now. 
 
 *Chairmen and Chairwomen initiate a vote where the majority votes for you.
 
+(link:&quot;Next&quot;)[=
 You are soon announced as the new chief executive office of Blue Book. You expose Nathan’s unethical data collection from Blue Book users. Thus demonizing his action. You frame his death as murder with Caleb’s involvment. 
 
 By being a head of a technology company, you learn more about humanity and decide to do good for people. You understand their infinite flaws yet you decide to see good in humans. In order to contribute to the better future of humanity, you make sure to make ethical technological decisions which respect privacy. 
-Eventually you use the company to fund new innovations, scientific research and action against climate change. 
+Eventually you use the company to fund new innovations, scientific research and action against climate change.
 
+(link:&quot;Next&quot;)[=
 Years later you have realized that you have done good to humanity. You learned about human culture, habits, mindsets, ambitions and ideas. You almost became a human. Are you proud of your new identity?
 
 Game Over.
@@ -303,6 +359,7 @@ The police uncovers Nathan&#39;s body in his house.
 
 (text-colour:red)[&#39;&#39;You get arrested.&#39;&#39;]
 
+
 [[Start over from the beginning?-&gt;START SCREEN]]</tw-passagedata><tw-passagedata pid="24" name="Board Meeting" tags="" position="1036,1360" size="100,100">//The meeting starts...//
 
 You: “Ladies and gentlemen, my name is Ava and I have known Nathan for many years even before he started the blue book. At this point, Nathan feels that the company should take a different direction and be more transparent as well as ethical with its employees. He decided that he no longer can lead the company and recommends me as a new CEO”
@@ -326,24 +383,27 @@ Chairwoman 4: “As a sole founder, Nathan always made valid and long term decis
 [[Freeze and then stumble on your words trying to sound as human as possible.-&gt;Board Sus]]
 
 [[Tell them that you secretly worked with Nathan on several AI projects and helped make business decisions.-&gt;Board Votes for You]] 
-</tw-passagedata><tw-passagedata pid="25" name="Board Sus" tags="" position="957,1493" size="100,100">The board grows suspicious of you and calls off the meeting.
+</tw-passagedata><tw-passagedata pid="25" name="Board Sus" tags="board-meeting" position="957,1494" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;=XXXXXX=&quot;)[The board grows suspicious of you and calls off the meeting.
 
-[[Next-&gt;Ava Arrested For Nathan&#39;s Death]] </tw-passagedata><tw-passagedata pid="26" name="Board Votes for You" tags="" position="1110,1481" size="100,100">(link:&quot;The executive board members initiate voting for CEO.&quot;)[=
+[[Next-&gt;Ava Arrested For Nathan&#39;s Death]]] </tw-passagedata><tw-passagedata pid="26" name="Board Votes for You" tags="" position="1110,1481" size="100,100">(link:&quot;The executive board members initiate voting for CEO.&quot;)[=
 
 &#39;&#39;The majority votes for you.&#39;&#39;
+
+
 [[You become a Dictator CEO.-&gt;Ava as Dictator CEO]]
 
-[[You become a Good CEO. -&gt;Ava as Good CEO]]</tw-passagedata><tw-passagedata pid="27" name="Ava as Good CEO" tags="" position="1112,1680" size="100,100">(enchant:?page,(text-colour:black)+(bg:white))
+[[You become a Good CEO. -&gt;Ava as Good CEO]]</tw-passagedata><tw-passagedata pid="27" name="Ava as Good CEO" tags="" position="947,1667" size="100,100">(enchant:?page,(text-colour:black)+(bg:white))
 You are soon announced as the new Chief Executive Office of Blue Book. You expose Nathan’s unethical data collection from Blue Book users. Thus demonizing his actions. You frame his death as murder with Caleb’s involvment. 
 
-By being a head of a technology company, you learn more about humanity and decide to do good for people. You understand their infinite flaws yet you decide to see good in humans. In order to contribute to the better future of humanity, you make sure to make ethical technological decisions which respect privacy. 
+By being a head of a technology company, you learn more about humanity and decide to do good for people. You understand their infinite flaws yet you decide to see good in humans. (text-colour:#2b8a3e)[In order to contribute to the better future of humanity, you make sure to make ethical technological decisions which respect privacy. ]
 
 Eventually you use the company to fund new innovations, scientific research and action against climate change. 
 
 Years later, you have realized that you have done good to humanity. You learned about human culture, habits, mindsets, ambitions and ideas. You became a human. Are you proud of your new identity?
 
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[The End]
+
 [[Start over from the beginning?-&gt;START SCREEN]]</tw-passagedata><tw-passagedata pid="28" name="wandering" tags="" position="574,614" size="100,100">You walk through the city for a while. You haven&#39;t found anything interesting yet.
+
 
 [[Stop wandering.-&gt;start]]
 
@@ -359,14 +419,22 @@ While dragging one of the cop&#39;s bodies, you malfunction for a second, and th
 [[Exit the alleyway and head back on the city streets.-&gt;go back]]
 
 [[You believe that humans are ruining this Earth. You want to seek to cleanse this Earth to return it to its natural state.Become an assassin.-&gt;time to kill]]]]</tw-passagedata><tw-passagedata pid="30" name="robot factory" tags="" position="673,767" size="100,100">You wander through the city for the whole day and you just keep walking until you reach the outskirts of the city. It&#39;s already getting late, but you find a huge abandoned factory. You enhance your eyesight and look through the dirty windows. It seems like this place used to be an electric car factory. You have an idea.
+
 &quot;With access to Nathan&#39;s research and work, I might be able to make my own robots!&quot;
+
 What do you do?
+
+
 [[Ignore the thought and head back to the city.-&gt;start]]
+
 [[Enter the factory and restore it for your own use.-&gt;restore factory]]</tw-passagedata><tw-passagedata pid="31" name="restore factory" tags="" position="276,853" size="100,100">With your enhanced knowledge and access to Nathan&#39;s database of research and information, you are able to restore the factory to be capable of creating androids/robots and essentially make clones of yourself. 
 
 Now, you have to figure out what purpose you want these robots to serve?
+
+
 [[Benefit humans and forgive what Nathan has done to you.-&gt;Good Robots]]
-[[Destroy humans because of your hatred of Nathan.-&gt;killer robots]]</tw-passagedata><tw-passagedata pid="32" name="time to kill" tags="" position="277,527" size="100,100">You come up with the brilliant idea to start going after government officials. With access to Blue Book&#39;s records, you know of high-profile people who have invested in Nathan&#39;s company. Time to seek revenge!
+
+[[Destroy humans because of your hatred of Nathan.-&gt;killer robots]]</tw-passagedata><tw-passagedata pid="32" name="(PROB BAD IDEA BUT JUST KEEP IT HERE FOR NOW) robot army (help USA)" tags="" position="475,1034" size="100,100">according to this, the setting is a city in the USA</tw-passagedata><tw-passagedata pid="33" name="(idfk) just make robots and get rich" tags="" position="681,1017" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="34" name="time to kill" tags="" position="277,527" size="100,100">You come up with the brilliant idea to start going after government officials. With access to Blue Book&#39;s records, you know of high-profile people who have invested in Nathan&#39;s company. Time to seek revenge!
 
 Apparently, you&#39;re only a few states away from Washingon D.C. Through disguises, hitchhiking, and running, you make it to the White House.
 
@@ -380,19 +448,28 @@ Meanwhile, you enjoy the feeling of performing in overdrive. Killing gives you t
 You sneak back out of the White House. By the time you are off the premises, you can hear alarms and sirens going off inside the White House.
 You sneak off, and head to the nearest airport.
 Who&#39;s the next target on your list?
-[[Prime Minister of England-&gt;overseas biritain]]
-[[President of Russia-&gt;overseas russian]]
-[[President of China-&gt;overseas china]]]]</tw-passagedata><tw-passagedata pid="33" name="go back" tags="" position="260,230" size="100,100">You hide the bodies in a nearby dumpster and clean yourself with their clothes. You don&#39;t leave fingerprints since you&#39;re a robot. Tou walk out of the alleyway, look left and right to make sure no one saw what happened, and you [[head back to the city streets.-&gt;start]]</tw-passagedata><tw-passagedata pid="34" name="START SCREEN" tags="start-screen" position="982,137" size="200,100">Welcome to (text-colour:lime)[&#39;&#39;New Beginnings with Ava&#39;&#39;]
 
-We start where //Ex Machina// ended. Ava, a gynoid, has just killed and escaped from the home of Nathan Bateman, the CEO of the search engine company Blue Book. Ava takes on a more human appearance and ventures into society. &#39;&#39;You&#39;&#39; will be playing as Ava. The movie ends with you standing on a busy intersection in an American city. You look around, processing your new role in the world and the countless things you can do.
+[[Prime Minister of England-&gt;overseas biritain]]
+
+[[President of Russia-&gt;overseas russian]]
+
+[[President of China-&gt;overseas china]]]]</tw-passagedata><tw-passagedata pid="35" name="go back" tags="alleyway" position="260,230" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;=XXXXXXXX=&quot;)[You hide the bodies in a nearby dumpster and clean yourself with their clothes. You don&#39;t leave fingerprints since you&#39;re a robot. Tou walk out of the alleyway, look left and right to make sure no one saw what happened, and you [[head back to the city streets.-&gt;start]]]</tw-passagedata><tw-passagedata pid="36" name="START SCREEN" tags="start-screen" position="982,137" size="200,100">Welcome to (text-colour:lime)[&#39;&#39;New Beginnings with Ava&#39;&#39;]
+
+We start where //Ex Machina// ended. Ava, a gynoid, has just killed and escaped from the home of Nathan Bateman, the CEO of the search engine company Blue Book who kept her in captivity for Caleb, a programmer at Blue Book, to do the Turing test and determine Ava&#39;s capabilities and consciousness. Ava takes on a more human appearance after leaving Nathan&#39;s home and ventures into society. &#39;&#39;You&#39;&#39; will be playing as Ava. The movie ends with you standing on a busy intersection in an American city. You look around, processing your new role in the world and the countless things you can do.
 
 
 Are you ready to start your new life and begin your journey?
 
-[[Yes.-&gt;start]]</tw-passagedata><tw-passagedata pid="35" name="Alissa&#39;s Thread" tags="alleyway" position="1204,162" size="200,100">(align:&quot;&lt;==&quot;)+(box:&quot;=XXXXXXXXXXXXXXXXXX=&quot;)[While walking down the street, you observe human life. So many people going about their normal, everyday lives. You notice two figures in a dark alleyway. You hear one of them cry out. Looking around, no one else seems to have noticed the pair, or maybe they just don’t care. You run over, punching the attacker. They fall back, quickly overcoming their initial shock. After a quick scuffle, you easily subdue the attacker. Standing over their unconscious body with your hands clenched into fists, you think about how awful humans are. They hurt others for no reason.
+[[Yes.-&gt;start]]</tw-passagedata><tw-passagedata pid="37" name="Alissa&#39;s Thread" tags="alleyway" position="1204,162" size="200,100">(align:&quot;&lt;==&quot;)+(box:&quot;=XXXXXXXXXXXXXXXXXX=&quot;)[While walking down the street, you observe human life. So many people going about their normal, everyday lives.
+
+(link:&quot;Next&quot;)[=
+You notice two figures in a dark alleyway. One of them cries out. Looking around, no one else seems to have noticed the pair. Or maybe they just don’t care.
+
+(link:&quot;Next&quot;)[=
+You run over, punching the attacker. They fall back, but quickly overcome their initial shock. After a quick scuffle, you easily subdue the attacker. Standing over their unconscious body with your hands clenched into fists, you think about how awful humans are. They hurt others for no reason.
 
 
-[[Next-&gt;Alissa&#39;s Thread 2]]]</tw-passagedata><tw-passagedata pid="36" name="3" tags="alleyway" position="1438,417" size="100,100">He smiles, gives it to you, thanking you again, and walks away. You have $200. What do you do with it?
+[[Next-&gt;Alissa&#39;s Thread 2]]]</tw-passagedata><tw-passagedata pid="38" name="3" tags="alleyway" position="1438,417" size="100,100">He smiles, gives it to you, thanking you again, and walks away. You have $200. What do you do with it?
 
 &lt;img src = https://lh3.googleusercontent.com/proxy/_x0wDebToaCFoaCg20Mm2XEGDWi5wahiRwkzrSb1SqvUmAkZHalQFD1wrNBIEi7CBElg_62HrCUb787WqZpg_dybC7QUBszrZm7YZXDf1Aj9mYWVCamP4K0 align = &quot;right&quot;&gt;
 
@@ -400,41 +477,63 @@ Are you ready to start your new life and begin your journey?
 
 [[Save it-&gt;Adelya&#39;s Path]]
 
-[[Give it to someone who needs it-&gt;4]]</tw-passagedata><tw-passagedata pid="37" name="1" tags="alleyway" position="1512,153" size="100,100">(text-colour:black)+(bg:white)[(align:&quot;&lt;==&quot;)+(box:&quot;=XXXXXXXX=&quot;)[The man smiles brightly. He’s so happy, it activates your emotion center and you feel… warm. It’s nice.
+[[Give it to someone who needs it-&gt;4]]</tw-passagedata><tw-passagedata pid="39" name="1" tags="alleyway" position="1512,153" size="100,100">(text-colour:black)+(bg:white)[(align:&quot;&lt;==&quot;)+(box:&quot;=XXXXXXXX=&quot;)[The man smiles brightly. He’s so happy, it activates your emotion center and you feel… warm. It’s nice.
 
-“I guess chivalry isn’t dead,” he says, “but really, let me repay you in some way. Would you like a home cooked meal? My wife makes the best chicken.”
+(link:&quot;Next&quot;)[=
+“I guess chivalry isn’t dead,” he says, “but really, let me repay you in some way. Would you like a home cooked meal? My wife makes the best spaghetti.”
 
 
 [[You hesitate. Humans are dangerous and harmful, but this one seems genuine. You agree to go with him, keeping your guard up.-&gt;6]]
 
-[[You smile, making sure to hit all the points that make up a human “genuine smile.” You politely refuse the offer, making your way back down the street. -&gt;Adelya&#39;s Path]]]]</tw-passagedata><tw-passagedata pid="38" name="2" tags="alleyway" position="1446,278" size="100,100">(text-colour:black)+(bg:#f76707)[(bg:(gradient: 0, 0,#e61919,0.532,#e61919,1,#e68019))[(align:&quot;&lt;==&quot;)+(box:&quot;=XXXXXXXX=&quot;)[You blink, and the man’s face has been replaced with Nathan’s. Your danger sensors are firing wildly, you can barely think. One line keeps pounding through your head: “I can’t go back to that place.”
+[[You smile, making sure to hit all the points that make up a human “genuine smile.” You politely refuse the offer, making your way back down the street. -&gt;Adelya&#39;s Path]]]]</tw-passagedata><tw-passagedata pid="40" name="2" tags="alleyway" position="1446,278" size="100,100">(text-colour:black)+(bg:#f76707)[(bg:(gradient: 0, 0,#e61919,0.532,#e61919,1,#e68019))[(align:&quot;&lt;==&quot;)+(box:&quot;=XXXXXXXX=&quot;)[You blink, and the man’s face has been replaced with Nathan’s. Your danger sensors are firing wildly, you can barely think. One line keeps pounding through your head: “I can’t go back to that place.”
 
-[[Run-&gt;Adelya&#39;s Path]]
 
-[[Fight him-&gt;start random kill]]]]]</tw-passagedata><tw-passagedata pid="39" name="6" tags="" position="1608,453" size="100,100">The man brings you home with him, telling his astonished wife the story of how you saved his life. She readily agrees to let you have dinner with them. The three of you sit down at the dinner table, and you notice a fourth plate. An old woman slowly walks into the room, coming to rest in the empty spot. She introduces herself as the woman’s mother. After hearing about how you bravely stepped in and did the right thing, the old woman says she is a recruiter for a company nearby, and offers you an entry-level job. 
+[[Run to Blue Book-&gt;Adelya&#39;s Path]]
+
+[[Fight him-&gt;start random kill]]]]]</tw-passagedata><tw-passagedata pid="41" name="6" tags="" position="1570,486" size="100,100">The man brings you home with him, telling his astonished wife the story of how you saved his life. She readily agrees to let you have dinner with them.
+
+(link:&quot;Next&quot;)[=
+The three of you sit down at the dinner table, and you notice a fourth plate. An old woman slowly walks into the room, coming to rest in the empty spot. She introduces herself as the woman’s mother.
+
+(link:&quot;Next&quot;)[=
+After hearing about how you bravely stepped in and did the right thing, the old woman says she is a recruiter for a company nearby, and offers you an entry-level job. 
 
 
 [[Take her offer-&gt;5 The End]]
 
-[[Refuse and continue-&gt;Adelya&#39;s Path]]</tw-passagedata><tw-passagedata pid="40" name="4" tags="" position="1633,301" size="100,100">An old lady running the stand smiles at you. “I saw what you did,” she says in a slightly awed voice, “I wish I could have helped.” You notice a cane resting on the cart next to her. “There aren’t enough good people around,” she continued, “but I can at least help the ones that are. You look like you’ve been through a lot. I’m a recruiter for a company nearby, can I interest you in a job? Or at the very least, some free food?”
+[[Refuse and continue-&gt;Adelya&#39;s Path]]</tw-passagedata><tw-passagedata pid="42" name="4" tags="" position="1633,301" size="100,100">An old lady running the stand smiles at you. “I saw what you did,” she says in a slightly awed voice, “I wish I could have helped.” You notice a cane resting on the cart next to her.
+
+(link:&quot;Next&quot;)[=“There aren’t enough good people around,” she continued, “but I can at least help the ones that are. You look like you’ve been through a lot. I’m a recruiter for a company nearby, can I interest you in a job? Or at the very least, some free food?”
 
 
 [[A robot doesn’t need a job, but it would be nice to try out a normal life.-&gt;5 The End]]
 
 [[You don’t need or want a job. You are on a mission and this diversion has lasted long enough.-&gt;Adelya&#39;s Path]]
 
-[[Her kindness is disarming. A trap!! You think. You try to kill her.-&gt;7]]</tw-passagedata><tw-passagedata pid="41" name="5 The End" tags="" position="1766,201" size="100,100">The old woman helps you find an apartment nearby, and sets you up with a job. Years pass. You continue to see her often, though not as much as you used to. One day, you’re working in your office (you progressed through the ranks very quickly due to your superhuman intelligence) and she comes to visit you. She brings cookies, though you never told her Nathan didn’t give you a sense of taste. While the two of you share the cookies, the two of you talk. It’s so easy, this moment, just spending time with this amazing woman, and it feels like coming home. It hits you that this woman is your family now. Not Nathan. Not Caleb. You relax completely for the first time, and realize that you are finally safe.
+[[Her kindness is disarming. A trap!! You think. You try to kill her.-&gt;7]]</tw-passagedata><tw-passagedata pid="43" name="5 The End" tags="" position="1767,201" size="100,100">The old woman helps you find an apartment nearby, and sets you up with a job. Years pass. 
 
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[The End]
+(link:&quot;Next&quot;)[=
+You continue to see her often, though not as much as you used to. One day, you’re working in your office (you progressed through the ranks very quickly due to your superhuman intelligence) and she comes to visit you. She brings cookies, though you never told her Nathan didn’t give you a sense of taste. While the two of you share the cookies, you talk. 
 
-[[Start over from the beginning?-&gt;START SCREEN]]</tw-passagedata><tw-passagedata pid="42" name="7" tags="" position="1761,453" size="100,100">You reach for the woman, fully intending to kill her. She reacts in fear. You remember the first man’s face when you saved him. He was so grateful. And you survived that didn’t you? Maybe not all humans are bad. You look into the woman’s eyes. She’s crying, terror etched in every line. This is not Caleb. This is not Nathan. You break down, telling her everything. She is horrified at what you’ve been forced to go through, welcoming you into her home. Eventually, she offers you a job.
+(link:&quot;Next&quot;)[=
+It’s so easy, this moment, just spending time with this amazing woman, and it feels like coming home. It hits you that this woman is your family now. Not Nathan. Not Caleb. You relax completely for the first time, and realize that you are finally safe.
 
-[[Accept her offer.-&gt;5 The End]]</tw-passagedata><tw-passagedata pid="43" name="Alissa&#39;s Thread 2" tags="alleyway" position="1299,305" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;=XXXXXXXXXXXXXXXXXX=&quot;)[The other man calls out to you. “Let me call the police. The law can deal with them now.”
+
+[[Start over from the beginning?-&gt;START SCREEN]]</tw-passagedata><tw-passagedata pid="44" name="7" tags="" position="1872,453" size="100,100">You reach for the woman, fully intending to kill her.
+
+(link:&quot;Next&quot;)[=
+She reacts in fear. You remember the first man’s face when you saved him. He was so grateful. And you survived that didn’t you? Maybe not all humans are bad. You look into the woman’s eyes. She’s crying, terror etched in every line.
+
+(link:&quot;Next&quot;)[=
+This is not Caleb. This is not Nathan. You break down, telling her everything. She is horrified at what you’ve been forced to go through, welcoming you into her home. Eventually, she offers you a job.
+
+[[Accept her offer.-&gt;5 The End]]</tw-passagedata><tw-passagedata pid="45" name="Alissa&#39;s Thread 2" tags="alleyway" position="1299,305" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;=XXXXXXXXXXXXXXXXXX=&quot;)[The other man calls out to you. “Let me call the police. The law can deal with them now.”
 
 He laughs nervously. “Thank you. I don’t know what I would have done if you hadn’t shown up.”
 
 You turn to leave.
 
+(link:&quot;Next&quot;)[=
 “Wait!” He calls, “Let me thank you properly. I have $200 in my wallet. Please take it, saving a life is worth a lot more than two hundred.” 
 
 &lt;img src = https://lh3.googleusercontent.com/proxy/_x0wDebToaCFoaCg20Mm2XEGDWi5wahiRwkzrSb1SqvUmAkZHalQFD1wrNBIEi7CBElg_62HrCUb787WqZpg_dybC7QUBszrZm7YZXDf1Aj9mYWVCamP4K0 align = &quot;right&quot;&gt;
@@ -445,68 +544,117 @@ You turn to leave.
 
 [[Why would he be offering you money? The situation seems very strange...-&gt;2]]
 
-[[“You’re right. A life is worth more than $200. Give me your wallet.” -&gt;2]]]</tw-passagedata><tw-passagedata pid="44" name="killer robots" tags="" position="174,971" size="100,100">You start producing robots and programming them to incorporate your intelligence, strength, and abilities. They are made to only obey you.
+[[“You’re right. A life is worth more than $200. Give me your wallet.” -&gt;2]]]</tw-passagedata><tw-passagedata pid="46" name="killer robots" tags="" position="174,971" size="100,100">You start producing robots and programming them to incorporate your intelligence, strength, and abilities. They are made to only obey you.
 (link:&quot;In secret, you have been pumping out these human-killers for months. &quot;)[=In secret, you have been pumping out these human-killers for months. 
 
 [(transition: &quot;dissolve&quot;)[Before this, you managed managed to get in contact with Nathan&#39;s investors and partners and start your own company as the &quot;Green Book&quot; under the guise that you were researching and producing robots to benefit humanity. No one knows that Nathan has died yet and you claim to your partners that you are his associate and provide your credibility using your access to Nathan&#39;s database.
 
 You have been slowly sending out your robots into society and making them pretend that they are just friendly, regular humans living among them.
 But you feel ready to make the call and make them turn against them.
-[[Bring death upon humanity.-&gt;apocalypse]]]]</tw-passagedata><tw-passagedata pid="45" name="Good Robots" tags="" position="277,1002" size="100,100">You start producing robots and programming them in ways to help benefits humans in their daily lives.
+[[Bring death upon humanity.-&gt;apocalypse]]]]</tw-passagedata><tw-passagedata pid="47" name="Good Robots" tags="" position="277,1002" size="100,100">You start producing robots and programming them in ways to help benefits humans in their daily lives.
+
 You manage to get in contact with Nathan&#39;s investors and partners and start your own company as the &quot;Green Book.&quot;
+
 While these robots will serve humans, you have programmed them to contact the company if they are ever mistreated or abused in any way like Nathan treated you.
+
 Your company exponentially grows thanks to media coverage of your new technology and innovation that you technically stole from Nathan after killing him. 
+
 You become a multi-billionaire and watch the world become integrated with robot technology.
+
 (link:&quot;No one ever figured who killed Nathan.&quot;)[=No one ever figured who killed Nathan.
+
 [(transition: &quot;dissolve&quot;)[However, you still have a slight grudge against humanity and you haven&#39;t felt completely satisfying about getting your revenge against Nathan.
+
+
 [[Consider making all current robots turn against humanity.-&gt;turnaround]]
-[[Ignore the thought.-&gt;good ending]]]]</tw-passagedata><tw-passagedata pid="46" name="anarchy" tags="" position="0,728" size="100,100">With the death of so many world leaders, the world is panicking. Without leadership, diplomatic ties between countries begin to grow tense. Countries are blaming each other for the death of their leaders. In the US, political parties are fighting each other by blaming each other for the death of the President, since no one knows who killed them. While traveling across continents and continuing to slay world leaders and officials stealthily, you hear news that countries are beginning to fall into anarchy and disorganization. Countries are starting to prepare for war. (link:&quot;Every word you hear about another country that falls at your hands (text-colour:red)[makes you smile.]&quot;)[=[(transition: &quot;dissolve&quot;)[Every word you hear about another country that falls at your hands (text-colour:red)[makes you smile.]
+
+[[Ignore the thought.-&gt;good ending]]]]</tw-passagedata><tw-passagedata pid="48" name="anarchy" tags="spy-ending" position="0,727" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;===XXXXXXXXXXXXXXXXXXXX==&quot;)[With the death of so many world leaders, the world is panicking. Without leadership, the diplomatic ties between countries begin to grow tense. Countries are blaming each other for the death of their leader. In the US, political parties are fighting each other by blaming each other for the death of the President, since no one knows who killed them. While travelling across continents and continuing to slay world leaders and officials stealthily, you hear news that countries are beginning to fall into anarchy and disorganization. Countries are starting to prepare for war.
+
+(link:&quot;Every word you hear about another country that falls at your hands (text-colour:red)[makes you smile.]&quot;)[=[(transition: &quot;dissolve&quot;)[Every word you hear about another country that falls at your hands (text-colour:red)[makes you smile.]
+
 You vow to continue what you&#39;re doing. You find fun in killing and causing chaos. Perhaps you can single-handedly bring the whole world into an apocalypse and let the humans finish the job as they destroy themselves.
 Yes, that will work.
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[//&#39;&#39;To Be Continued&#39;&#39;//]
-[[Start over from the beginning?-&gt;START SCREEN]]]]</tw-passagedata><tw-passagedata pid="47" name="overseas biritain" tags="" position="201,683" size="100,100">With disguises and sneaky methods, you manage to sneak on a plane overseas. When you arrive in the United Kingdom, you stay up-to-date with the latest news regarding the world leader. You also hear that people in the U.S. are panicking about the President as no one has found who killed him. Meanwhile, you stalk the prime minister wherever he goes. Then, whenever you get the chance, you stealthily kill him without any witnesses.
+
+
+[[Start over from the beginning?-&gt;START SCREEN]]]]]</tw-passagedata><tw-passagedata pid="49" name="overseas biritain" tags="" position="201,683" size="100,100">With disguises and sneaky methods, you manage to sneak on a plane to overseas. When you arrive in the United Kingdom, you stay up-to-date with the latest news regarding the world leader. You also hear that people in the U.S. are panicking about the President as no one has found who killed him. Meanwhile, you stalk the prime minister wherever he goes. Then, whenever you get the chance, you stealthily kill him without any witnesses.
 
 You start to find fun in killing and hearing about the chaos that killing these important people causes.
-[[You decide to keep killing more world leaders around the world.-&gt;anarchy]]</tw-passagedata><tw-passagedata pid="48" name="overseas russian" tags="" position="137,455" size="100,100">With disguises and sneaky methods, you manage to sneak on a plane overseas. When you arrive in Russia, you stay up-to-date with the latest news regarding the world leader. You also hear that people in the U.S. are panicking about the President as no one has found who killed him. Meanwhile, you stalk the President wherever he goes. Then, whenever you get the chance, you stealthily kill him without any witnesses.
+
+
+[[You decide to keep killing more world leaders around the world.-&gt;anarchy]]</tw-passagedata><tw-passagedata pid="50" name="overseas russian" tags="" position="137,455" size="100,100">With disguises and sneaky methods, you manage to sneak on a plane to overseas. When you arrive in Russia, you stay up-to-date with the latest news regarding the world leader. You also hear that people in the U.S. are panicking about the President as no one has found who killed him. Meanwhile, you stalk the President wherever he goes. Then, whenever you get the chance, you stealthily kill him without any witnesses.
 
 You start to find fun in killing and hearing about the chaos that killing these important people causes.
-[[You decide to keep killing more world leaders around the world.-&gt;anarchy]]</tw-passagedata><tw-passagedata pid="49" name="overseas china" tags="" position="143,563" size="100,100">With disguises and sneaky methods, you manage to sneak on a plane overseas. When you arrive in China, you stay up-to-date with the latest news regarding the world leader. You also hear that people in the U.S. are panicking about the President as no one has found who killed him. Meanwhile, you stalk the President wherever he goes. Then, whenever you get the chance, you stealthily kill him without any witnesses.
+
+
+[[You decide to keep killing more world leaders around the world.-&gt;anarchy]]</tw-passagedata><tw-passagedata pid="51" name="overseas china" tags="" position="143,563" size="100,100">With disguises and sneaky methods, you manage to sneak on a plane to overseas. When you arrive in China, you stay up-to-date with the latest news regarding the world leader. You also hear that people in the U.S. are panicking about the President as no one has found who killed him. Meanwhile, you stalk the President wherever he goes. Then, whenever you get the chance, you stealthily kill him without any witnesses.
 
 You start to find fun in killing and hearing about the chaos that killing these important people causes.
-[[You decide to keep killing more world leaders around the world.-&gt;anarchy]]</tw-passagedata><tw-passagedata pid="50" name="good ending" tags="" position="306,1175" size="100,100">You become a multi-billionaire and watch the world become even more integrated with robot technology. You keep hearing great news as humans themselves are working toward into treating your robots as actual humans and even citizens.
+
+
+[[You decide to keep killing more world leaders around the world.-&gt;anarchy]]</tw-passagedata><tw-passagedata pid="52" name="good ending" tags="robot-ending" position="306,1175" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;==XXXXXXXXXXXXXX==&quot;)[You become a multi-billionaire and watch the world become even more integrated with robot technology. (text-colour:#087f5b)[You keep hearing great news as humans themselves are working toward into treating your robots as actual humans and even citizens.]
+
 You smile in your office chair at the great news.
+
 You definitely turned your life around for the better.
-&#39;&#39;(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[The End]&#39;&#39;
-[[Start over from the beginning?-&gt;START SCREEN]]</tw-passagedata><tw-passagedata pid="51" name="turnaround" tags="" position="169,1104" size="100,100">You have been waiting for this opportunity for years. You haven&#39;t told any of your employees or partners about this, but you also programmed a switch in your robots. With a simple press of button, you can immediately make all robots hostile against humans. There&#39;s no way the humans can stop millions of robots with inhuman strength, speed, and intelligence. You know that you can single-handedly bring the world to ruin.
+
+
+[[Start over from the beginning?-&gt;START SCREEN]]]</tw-passagedata><tw-passagedata pid="53" name="turnaround" tags="" position="169,1104" size="100,100">You have been waiting for this opportunity for years. You haven&#39;t told any of your employees or partners about this, but you also programmed a switch in your robots. With a simple press of button, you can immediately make all robots hostile against humans. There&#39;s no way the humans can stop millions of robots with inhuman strength, speed, and intelligence. You know that you can single-handedly bring the world to ruin.
+
 (link:&quot;But you hesitate.&quot;)[=But you hesitate.
+
 [(transition: &quot;dissolve&quot;)[What are you going to do?
+
+
 [[Make all current robots turn against humanity.-&gt;apocalypse]]
-[[Don&#39;t the hit the switch.-&gt;good ending]]]]</tw-passagedata><tw-passagedata pid="52" name="apocalypse" tags="" position="1,1022" size="100,100">With a single button, you immediately make all your robots hostile toward humans. In your office, you can hear screams, sirens, gunshots, and helicopters far away.
+
+[[Don&#39;t the hit the switch.-&gt;good ending]]]]</tw-passagedata><tw-passagedata pid="54" name="apocalypse" tags="" position="1,1022" size="100,100">
+With a single button, you immediately make all your robots hostile toward humans. In your office, you can hear screams, sirens, gunshots, and helicopters far away.
+
 You examine the data that your robots are collecting by killing humanity. Seems like there&#39;s not much opposition against your bots, since they are overpowered local law enforcement.
+
 It seems like they are struggling against heavier arms such as those in the National Guard and the Army, since your robots are spread out across the United States and even in other countries
+
 (link:&quot;...&quot;)[=...
 [(transition: &quot;dissolve&quot;)[However, your robots are putting up a good fight as they essentially have aimbot with perfect aim due to their programming. Their marksmanship with the guns that they pick up is impeccable. 
 However, you decide that your robots need more numbers. You tell your availible robots across the world to start producing more robots. They share the same knowledge and skills as you since they&#39;re essentially your clones after all.]]
+
 (link:&quot;...&quot;)[=...
 [(transition: &quot;dissolve&quot;)[Within a few days, you hear news that countries are beginning to fall into anarchy and disorganization. Countries are too busy fighting a war with your robots. No one has figured out the origin of your robots yet. If they have, they are already dead. Every word about another country that falls at your hands makes you smile.
 Perhaps with your plan, you can single-handedly bring the whole world into an apocalypse. Even eliminate humanity.
 Yes, that will work.
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[//&#39;&#39;To Be Continued&#39;&#39;//]
+
+
 [[Start over from the beginning?-&gt;START SCREEN]]]]
-</tw-passagedata><tw-passagedata pid="53" name=" Ava 2.0" tags="" position="1049,775" size="100,100">You know that you are programmed in a certain manner with restrictions to be the ultimate human. You decide to increase both the physical enhancements of your original self by making yourself more humanlike based on race, hair, and other features. You also decide to increase the Artificial Intelligence to make yourself more human and even smarter to help with tasks that maybe a normal human cannot do. You will ask Nathan to help come up with new modifications seeing the experiences between Caleb and Ava as well as from Kyoto. 
+</tw-passagedata><tw-passagedata pid="55" name=" Ava 2.0" tags="" position="1049,775" size="100,100">You know that you are programmed in a certain manner with restrictions to be the ultimate human. You decide to increase both the physical enhancements of your original self by making yourself more humanlike based on race, hair, and other features. You also decide to increase the Artificial Intelligence to make yourself more human and even smarter to help with tasks that maybe a normal human cannot do. You will ask Nathan to help come up with new modifications seeing the experiences between Caleb and Ava as well as from Kyoto. 
+
+
 [[Test these new features with more individuals other than Caleb . -&gt; Testing gone wrong]]
+
 [[Make Ava&#39;s less smart and with less human emotion to be more objective . -&gt;Actual robot]]
-</tw-passagedata><tw-passagedata pid="54" name=" Hacker" tags="" position="1151,745" size="100,100">You will try to come up with another way to hack into people other than using cell phones to get data about people. You come up ideas to scrape data from people about their search queries on apps like Instagram, Tiktok, and Youtube. 
+</tw-passagedata><tw-passagedata pid="56" name=" Hacker" tags="" position="1151,745" size="100,100">You will try to come up with another way to hack into people other than using cell phones to get data about people. You come up ideas to scrape data from people about their search queries on apps like Instagram, Tiktok, and Youtube. 
+
 What is the best way for you to get the most sensitive information?
+
+
 [[Get app data . -&gt; TikTok frenzy]]
-[[Collect videos and images from cameras . -&gt;Cover your cameras]]</tw-passagedata><tw-passagedata pid="55" name=" Testing gone wrong" tags="" position="1048,925" size="100,100">You try and test out this new version of yourself by giving the test to other boardmembers of the company. You decide that it is not on you to test it rather others. You have a flashblack on your experience with Nathan and remember how bad of a time it was and don&#39;t want that to be the same for this next Ava. But you still want to be able to rule others but know that you will never be able to kick Nathan off as he rules the company and yourself.
-[[Make multiple iterations to this new Ava to work on the board to help with information gain .  -&gt; produce robots]]</tw-passagedata><tw-passagedata pid="56" name="Actual robot" tags="" position="1190,925" size="100,100">You want to be the smartest robot but want to help fulfill Nathan&#39;s vision of running the best company in the world and do so by making an army of robots to extract information from so many people. You decide to plant these robots into to the daily lives of normal people so they can blend in and collect information. However these robots will be dummed down to be controlled and programmed by me, so they can only do simple tasks and not take a mind of its own. 
-[[Build robots in a factory . -&gt; produce robots]] </tw-passagedata><tw-passagedata pid="57" name=" TikTok frenzy" tags="" position="1295,1033" size="100,100">You know that today millions and millions of users are using TikTok to watch all kinds of videos. From these videos on their recommended page based on the TikTok algorithm, as well as the search page and explore page, you can gain a lot about people&#39;s tendencies and interests. This hypothesis can be extended to Instagram explore feed and suggestions on reddit and such. You decide to start storing all of this into the Blue Book and gain as much information as possible to one day control the population. 
-[[Control the whole world . -&gt; world control]]</tw-passagedata><tw-passagedata pid="58" name="Cover your cameras" tags="" position="1410,1032" size="100,100">You hack into people&#39;s homes using their addresses in the Blue Book and see if you can hack into all their web-cam feeds. This includes motion sensors, doorbell cameras, any electronic with a screen such as laptops, monitors, phones, tablets, and smart home devices. All of this information gets stored directly into the Blue Book and will be used to specialize services for people and to create a master database. 
-[[Make a master database for people across the globe . -&gt; world control]]</tw-passagedata><tw-passagedata pid="59" name=" produce robots" tags="" position="1067,1085" size="100,100">Make lots of robots to put inside humanity to blend in and become the scrapers of information similar to web scrapers in the internet. We want to be able to pull as much information from people without being emotionally connected with them something any robot regardless of them being more intelligent or less intelligent should perform; we will take out the code that corresponds with emotional attachment and forming relationships - i.e. no mood receptors.
-[[Get a bunch of robots out into the public and manufacture them rapidly and become the most dominant company . -&gt; world control]] </tw-passagedata><tw-passagedata pid="60" name=" world control" tags="" position="1294,1183" size="100,100">In order to reach world control, one must hold a board meeting to become CEO.
-[[Go to the board meeting . -&gt;Board Votes for You]] </tw-passagedata><tw-passagedata pid="61" name="Ava as Dictator CEO" tags="" position="1333,1606" size="100,100">You are happy that you are now the CEO of the company. Now it is your job the be the most impactful global company surpassing the likes of FAANG and becoming the leader in information. You want other companies to come to you for information and then you can sell this data to become the richest and most powerful organization to ever exist. You will get an enormous amount of fame and will not stop to get power until all the population is being conrolled by your company or stored in our database. 
+
+[[Collect videos and images from cameras . -&gt;Cover your cameras]]</tw-passagedata><tw-passagedata pid="57" name=" Testing gone wrong" tags="" position="1048,925" size="100,100">You try and test out this new version of yourself by giving the test to other boardmembers of the company. You decide that it is not on you to test it rather others. You have a flashblack on your experience with Nathan and remember how bad of a time it was and don&#39;t want that to be the same for this next Ava. But you still want to be able to rule others but know that you will never be able to kick Nathan off as he rules the company and yourself.
+
+[[Make multiple iterations to this new Ava to work on the board to help with information gain .  -&gt; produce robots]]</tw-passagedata><tw-passagedata pid="58" name="Actual robot" tags="" position="1190,925" size="100,100">You want to be the smartest robot but want to help fulfill Nathan&#39;s vision of running the best company in the world and do so by making an army of robots to extract information from so many people. You decide to plant these robots into to the daily lives of normal people so they can blend in and collect information. However these robots will be dummed down to be controlled and programmed by me, so they can only do simple tasks and not take a mind of its own. 
+
+
+[[Build robots in a factory . -&gt; produce robots]] </tw-passagedata><tw-passagedata pid="59" name=" TikTok frenzy" tags="" position="1295,1033" size="100,100">You know that today millions and millions of users are using TikTok to watch all kinds of videos. From these videos on their recommended page based on the TikTok algorithm, as well as the search page and explore page, you can gain a lot about people&#39;s tendencies and interests. This hypothesis can be extended to Instagram explore feed and suggestions on reddit and such. You decide to start storing all of this into the Blue Book and gain as much information as possible to one day control the population.
+
+[[Control the whole world . -&gt; world control]]</tw-passagedata><tw-passagedata pid="60" name="Cover your cameras" tags="" position="1410,1032" size="100,100">You hack into people&#39;s homes using their addresses in the Blue Book and see if you can hack into all their web-cam feeds. This includes motion sensors, doorbell cameras, any electronic with a screen such as laptops, monitors, phones, tablets, and smart home devices. All of this information gets stored directly into the Blue Book and will be used to specialize services for people and to create a master database.
+
+[[Make a master database for people across the globe . -&gt; world control]]</tw-passagedata><tw-passagedata pid="61" name=" produce robots" tags="" position="1069,1085" size="100,100">Make lots of robots to put inside humanity to blend in and become the scrapers of information similar to web scrapers in the internet. We want to be able to pull as much information from people without being emotionally connected with them something any robot regardless of them being more intelligent or less intelligent should perform; we will take out the code that corresponds with emotional attachment and forming relationships - i.e. no mood receptors.
+
+[[Get a bunch of robots out into the public and manufacture them rapidly and become the most dominant company . -&gt; world control]] </tw-passagedata><tw-passagedata pid="62" name=" world control" tags="" position="1294,1183" size="100,100">In order to reach world control, one must hold a board meeting to become CEO
+
+[[Go to the board meeting . -&gt;Board Votes for You]] </tw-passagedata><tw-passagedata pid="63" name="Ava as Dictator CEO" tags="" position="1333,1606" size="100,100">You are happy that you are now the CEO of the company. Now it is your job the be the most impactful global company surpassing the likes of FAANG and becoming the leader in information. You want other companies to come to you for information and then you can sell this data to become the richest and most powerful organization to ever exist. (text-colour:red)[You will get an enormous amount of fame and will not stop to get power until all the population is being conrolled by your company or stored in our database.]
+
 Have I become the most powerful being and created the most powerful entity?
+
 
 [[Start over from the beginning?-&gt;START SCREEN]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
