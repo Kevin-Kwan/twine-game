@@ -165,7 +165,13 @@ tw-story [tags~= robot-factory] {
 
 [[Wander throughout the city and observe your surroundings.-&gt;making observations]]
 
-[[Start killing people around you with your bare hands. -&gt;start random kill]]]</tw-passagedata><tw-passagedata pid="2" name="start random kill" tags="" position="1289,528" size="200,100">You target random people around you and kill about 10 innocent civilians. People don’t know why you’re doing this and now there is panic throughout the city street as people are scattering and fleeing around you. About 4 police cars arrive on the scene within a minute. You are now surrounded by 6 cops with their guns pointed at you. You hear more police sirens in the distance. “Don’t move! Reach for the sky!” 
+[[Start killing people around you with your bare hands. -&gt;start random kill]]]</tw-passagedata><tw-passagedata pid="2" name="start random kill" tags="" position="1289,528" size="200,100">&lt;audio autoplay id=&quot;run&quot;&gt; &lt;source src=&quot;https://raw.githubusercontent.com/Kevin-Kwan/twine-game/master/Sound Effects/runningsound.mp3&quot;&gt;
+&lt;/audio&gt;
+&lt;script&gt;
+  var audio = document.getElementById(&quot;run&quot;);
+  audio.volume = 0.8;
+&lt;/script&gt;
+You target random people around you and kill about 10 innocent civilians. People don’t know why you’re doing this and now there is panic throughout the city street as people are scattering and fleeing around you. About 4 police cars arrive on the scene within a minute. You are now surrounded by 6 cops with their guns pointed at you. You hear more police sirens in the distance. “Don’t move! Reach for the sky!” 
 
 What do you do?
 
@@ -192,10 +198,10 @@ You quickly turn around and start bolting across the street. The police open fir
 
 [[Run to the nearest alleyway behind a building.-&gt;alleyway]]
 
-[[Keep running down the street.-&gt;death by bullets]]</tw-passagedata><tw-passagedata pid="4" name="alleyway" tags="another-alley" position="1593,767" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;===XXXXXXXXXXXXXXXXXXXX==&quot;)[You bolt into the nearest alleyway. As you round the corner, you get shot in the back of your right arm and your right arm no longer works, but you’re still alive. Because of your strength and inhuman abilities, you manage to run through multiple alleyways and evade the cops. You are now a wanted woman. You spot some old, dirty clothing and some discarded electric appliances in a dumpster nearby.
+[[Keep running down the street.-&gt;death by bullets]]</tw-passagedata><tw-passagedata pid="4" name="alleyway" tags="another-alley" position="1640,735" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;===XXXXXXXXXXXXXXXXXXXX==&quot;)[You bolt into the nearest alleyway. As you round the corner, you get shot in the back of your right arm and your right arm no longer works, but you’re still alive. Because of your strength and inhuman abilities, you manage to run through multiple alleyways and evade the cops. You are now a wanted woman. You spot some old, dirty clothing and some discarded electric appliances in a dumpster nearby.
 
 
-Disguise yourself as a homeless person and make repairs to yourself.
+[[Disguise yourself as a homeless person and make repairs to yourself. Head back on the street when the coast is clear and the cops are no longer on your tail.-&gt;start]]
 
 [[Ignore it and keep roaming the streets. -&gt;clueless]]]
 &lt;audio autoplay id=&quot;run&quot;&gt; &lt;source src=&quot;https://raw.githubusercontent.com/Kevin-Kwan/twine-game/master/Sound Effects/runningsound.mp3&quot;&gt;
@@ -294,7 +300,7 @@ Should you approach them?
 
 (link-reveal:&quot;You want to take over the company...&quot;)[=
 [[And make more ethical decisions as a CEO -&gt;Adelya - Option 1]]
-[[For the sole purpose of gaining power and becoming a dictator-&gt;Ruhan - Option 2]]]</tw-passagedata><tw-passagedata pid="15" name="Adelya - Option 1" tags="reception-desk" position="1006,623" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;=XXXXXXXXXXX=&quot;)[[[You approach the front desk and start a conversation with a receptionist-&gt;Convo with Receptionist]]
+[[For the sole purpose of gaining power and becoming a dictator-&gt;Ruhan - Option 2]]]</tw-passagedata><tw-passagedata pid="15" name="Adelya - Option 1" tags="reception-desk" position="1006,622" size="100,100">(align:&quot;&lt;==&quot;)+(box:&quot;=XXXXXXXXXXX=&quot;)[[[You approach the front desk and start a conversation with a receptionist-&gt;Convo with Receptionist]]
 
 
 [[You hack into Blue Book for a hostile takeover.-&gt;Hack Blue Book]]]</tw-passagedata><tw-passagedata pid="16" name="Ruhan - Option 2" tags="" position="1124,625" size="100,100">You decide that Nathan&#39;s vision was right along. You want to work alongside him to be the controllers of the world - to be the best creator/inventor on the planet. You will do whatever it takes to build tons of these robots. You and Nathan decide that you will either make more versions of Ava with new updates and work on that or still continue to find new ways to hack individuals to get information on them
@@ -331,7 +337,7 @@ You: “Ladies and gentlemen, my name is Ava and I have known Nathan for many ye
 
 //You electronically share the fake resignation letter from Nathan’s email and voice mail confirming his decision.//
 
-*After hearing the fake voicemail, chair people look around confused.
+After hearing the fake voicemail, chair people look around confused.
 
 (link:&quot;Next&quot;)[=
 -Chairwoman 1: “Why isn’t Nathan here to share the news by himself?”
